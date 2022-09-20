@@ -1,7 +1,13 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-last_digit = int(str(number)[-1])
+
+sign = 1;
+
+if number < 0:
+    sign = -1
+
+last_digit = int(str(number)[-1]) * sign
 
 if last_digit > 5:
     end_tag = "and is greater than 5"
