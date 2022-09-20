@@ -2,7 +2,7 @@
 import random
 number = random.randint(-10000, 10000)
 
-sign = 1;
+sign = 1
 
 if number < 0:
     sign = -1
