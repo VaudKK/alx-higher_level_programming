@@ -1,0 +1,141 @@
+#include "lists.h"
+
+listint_t *insert_node(listint_t **head, int number)                                                                                                     
+
+{                                                                                                                                                        
+
+  listint_t *new;                                                                                                                                  
+
+  listint_t *current = *head;                                                                                                                      
+
+  listint_t *previous;                                                                                                                             
+
+                                                                                                                                                           
+
+  new->n = number;                                                                                                                                 
+
+                                                                                                                                                           
+
+  while (true)                                                                                                                                     
+
+    {                                                                                                                                                
+
+      if ((current + 1)->n > number)                                                                                                           
+
+	previous->next = new;                                                                                                            
+
+                                                                                                                                                               
+
+      if (current->n > number)                                                                                                                 
+
+	{                                                                                                                                        
+
+	  new->next = current;                                                                                                             
+
+	  break;                                                                                                                           
+
+	}                                                                                                                                        
+
+      current = current->next;                                                                                                                 
+
+    }                                                                                                                                                
+
+                                                                                                                                                           
+
+  return (*head(;                                                                                                                                  
+
+		                                                                                                                                                         
+
+		}listint_t *insert_node(listint_t **head, int number)                                                                                                     
+
+    {                                                                                                                                                        
+
+      listint_t *new;                                                                                                                                  
+
+      listint_t *current = *head;                                                                                                                      
+
+      listint_t *previous;                                                                                                                             
+
+                                                                                                                                                               
+
+      new->n = number;                                                                                                                                 
+
+                                                                                                                                                               
+
+      while (true)                                                                                                                                     
+
+	{                                                                                                                                                
+
+	  if ((current + 1)->n > number)                                                                                                           
+
+	    previous->next = new;                                                                                                            
+
+	                                                                                                                                                           
+
+	  if (current->n > number)                                                                                                                 
+
+	    {                                                                                                                                        
+
+	      new->next = current;                                                                                                             
+
+	      break;                                                                                                                           
+
+	    }                                                                                                                                        
+
+	  current = current->next;                                                                                                                 
+
+	}                                                                                                                                                
+
+                                                                                                                                                               
+
+      return (*head(;                                                                                                                                  
+
+		                                                                                                                                                             
+
+		    }listint_t *insert_node(listint_t **head, int number)                                                                                                     
+
+	{                                                                                                                                                        
+
+	  listint_t *new;                                                                                                                                  
+
+	  listint_t *current = *head;                                                                                                                      
+
+	  listint_t *previous;                                                                                                                             
+
+	                                                                                                                                                           
+
+	  new->n = number;                                                                                                                                 
+
+	                                                                                                                                                           
+
+	  while (true)                                                                                                                                     
+
+	    {                                                                                                                                                
+
+	      if ((current + 1)->n > number)                                                                                                           
+
+		previous->next = new;                                                                                                            
+
+	                                                                                                                                                               
+
+	      if (current->n > number)                                                                                                                 
+
+		{                                                                                                                                        
+
+		  new->next = current;                                                                                                             
+
+		  break;                                                                                                                           
+
+		}                                                                                                                                        
+
+	      current = current->next;                                                                                                                 
+
+	    }                                                                                                                                                
+
+	                                                                                                                                                           
+
+	  return (*head(;                                                                                                                                  
+
+			                                                                                                                                                         
+
+		       }
