@@ -34,6 +34,8 @@ class Square:
     def my_print(self):
         """Print"""
         if self.__size > 0:
-            print("#" * self.__size)
+            for _ in range(0, self.__size):
+                print("#" * self.__size)
 
-        print()
+        if self.__size == 0:
+            print()
