@@ -9,7 +9,7 @@ def text_indentation(text):
 
     new_string = ""
     for c in text:
-        if c in ['.', '?', ':']
+        if c in ['.', '?', ':']:
             new_string += c
             new_string += '\n\n'
         elif c != ' ':
