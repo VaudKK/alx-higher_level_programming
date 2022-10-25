@@ -15,3 +15,9 @@
     >>> base_geometry.integer_validator("name", 0)
     Traceback (most recent call last):
     ValueError: name must be greater than 0
+    >>> base_geometry.integer_validator("name", [3])
+    Traceback (most recent call last):
+    TypeError: name must be an integer
+    >>> base_geometry.integer_validator("name", (3,))
+    Traceback (most recent call last):
+    TypeError: name must be an integer
