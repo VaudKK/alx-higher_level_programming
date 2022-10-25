@@ -6,9 +6,9 @@ class Square(__import__('9-rectangle').Rectangle):
     """ square class"""
     def __init__(self, size):
         """ initialize """
-        Rectangle.__init__(self, size, size)
+        super().__init__(size, size)
         self.__size = size
 
-    def area():
+    def area(self):
         """ square area """
         return self.__size * self.__size
