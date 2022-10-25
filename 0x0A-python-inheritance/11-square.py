@@ -12,3 +12,11 @@ class Square(__import__('9-rectangle').Rectangle):
     def area(self):
         """ square area """
         return self.__size ** 2
+
+    def __str__(self):
+        """ str() """
+        return "[Square] {}/{}".format(self.__size, self.__size)
+
+    def __repr__(self):
+        """ to string """
+        return "[Square] {}/{}".format(self.__size, self.__size)
