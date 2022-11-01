@@ -122,9 +122,14 @@ class Rectangle(Base):
                .format(self.id, self.__x, self.__y,
                        self.__width, self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ update rectangle values """
         my_attr = ["id", "width", "height", "x", "y"]
         if args is not None:
             for index in range(0, len(args)):
                 setattr(self, my_attr[index], args[index])
+
+        if kwargs is not None:
+            for key, value in kwargs.items():
+                if key in my_attr:
+                    setattr(self, key, value)
