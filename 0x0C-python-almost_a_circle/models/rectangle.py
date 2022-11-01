@@ -108,7 +108,12 @@ class Rectangle(Base):
 
     def display(self):
         """ display rectangle """
+        for _ in range(0, self.__y):
+            print("")
+
         for _ in range(0, self.__height):
+            for _ in range(0, self.__x):
+                print(" ", end='')
             print("#" * self.__width)
 
     def __str__(self):
