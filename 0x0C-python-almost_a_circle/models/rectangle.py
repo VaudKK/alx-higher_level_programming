@@ -2,6 +2,7 @@
 """ rectangle module """
 from models.base import Base
 
+
 class Rectangle(Base):
     """ Rectangle class """
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -13,7 +14,7 @@ class Rectangle(Base):
 
         if width <= 0:
             raise ValueError("width must be > 0")
-        
+
         if type(height) is not int:
             raise TypeError("height must be an integer")
 
@@ -60,7 +61,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        """ set height """ 
+        """ set height """
         if type(value) is not int:
             raise TypeError("height must be an integer")
 
@@ -101,7 +102,6 @@ class Rectangle(Base):
 
         self.__y = value
 
-
     def area(self):
         """ returns the area """
         return self.__width * self.__height
@@ -110,3 +110,7 @@ class Rectangle(Base):
         """ display rectangle """
         for _ in range(0, self.__height):
             print("#" * self.__width)
+
+    def __str__(self):
+        """ ovr str """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
