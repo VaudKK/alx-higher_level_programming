@@ -121,3 +121,10 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}"\
                .format(self.id, self.__x, self.__y,
                        self.__width, self.__height)
+
+    def update(self, *args):
+        """ update rectangle values """
+        my_attr = ["id", "width", "height", "x", "y"]
+        if args is not None:
+            for index in range(0, len(args)):
+                setattr(self, my_attr[index], args[index])
