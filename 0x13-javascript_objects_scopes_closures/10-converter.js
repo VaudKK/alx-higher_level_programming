@@ -6,7 +6,7 @@ function converter (base) {
 }
 
 converter.prototype.converter = function (number) {
-  return parseInt(number, converter.base);
+  return parseInt(number, 2);
 }
 
 module.exports = converter.prototype;
