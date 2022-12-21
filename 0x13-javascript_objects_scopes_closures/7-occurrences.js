@@ -1,3 +1,6 @@
+#!/usr/bin/node
+'use strict';
+
 function nbOccurences (list, searchElement) {
   this.list = list;
   this.searchElement = searchElement;
