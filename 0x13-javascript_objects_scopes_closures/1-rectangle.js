@@ -1,4 +1,5 @@
 #!/usr/bin/node
+'use strict';
 
 class Rectangle {
   constructor (w, h) {
@@ -6,3 +7,5 @@ class Rectangle {
     this.height = h;
   }
 }
+
+module.exports = Rectangle;
