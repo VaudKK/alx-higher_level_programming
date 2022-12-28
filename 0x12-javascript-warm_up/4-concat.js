@@ -1,6 +1,5 @@
 #!/usr/bin/node
-
-const { argv } = require('node:process');
+const argv = process.argv;
 
 const inputOne = argv[2];
 const inputTwo = argv[3];

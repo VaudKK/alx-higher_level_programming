@@ -1,7 +1,7 @@
 #!/usr/bin/node
 'use strict';
 
-const { argv } = require('node:process');
+const argv = process.argv;
 
 if (argv.length > 2) {
   if (isNaN(argv[2])) {
