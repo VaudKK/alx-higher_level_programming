@@ -2,6 +2,9 @@
 import sys
 import MySQLdb
 
+"""
+select all rows from states
+"""
 
 if __name__ == '__main__':
     arguments = sys.argv[1:]
