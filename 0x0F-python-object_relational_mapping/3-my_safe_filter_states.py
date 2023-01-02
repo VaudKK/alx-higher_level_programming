@@ -12,10 +12,11 @@ if __name__ == '__main__':
         db = MySQLdb.connect(host='localhost', user=arguments[0],
                              passwd=arguments[1], db=arguments[2])
         cur = db.cursor()
-        cur.execute("""SELECT * FROM states where states.name LIKE BINARY %(username)s\
-                    order by states.id ASC""",{
+        cur.execute("""SELECT * FROM states where states.name\
+                    LIKE BINARY %(username)s\
+                    order by states.id ASC""", {
                     'username': arguments[3]
-                 })
+                    })
         rows = cur.fetchall()
         for row in rows:
             print(row)
