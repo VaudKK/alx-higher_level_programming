@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-select all rows from states by user input
+all rows from states by user input
 """
 
 import sys
@@ -12,8 +12,8 @@ if __name__ == '__main__':
         db = MySQLdb.connect(host='localhost', user=arguments[0],
                              passwd=arguments[1], db=arguments[2])
         cur = db.cursor()
-        query = "SELECT * FROM states where states.name = '{}'\
-                    order by states.id ASC".format(arguments[3])
+        query = "SELECT * FROM states where states.name LIKE BINARY '{}'\
+                 order by states.id ASC".format(arguments[3])
         cur.execute(query)
         rows = cur.fetchall()
         for row in rows:
