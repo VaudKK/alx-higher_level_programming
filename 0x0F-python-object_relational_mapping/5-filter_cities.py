@@ -19,12 +19,8 @@ if __name__ == '__main__':
                     'statename': arguments[3]
                     })
         rows = cur.fetchall()
-        size = len(rows)
-        for index, row in enumerate(rows):
-            if index == size - 1:
-                print("{}".format(row[0]))
-            else:
-                print("{}, ".format(row[0]), end='')
+        if rows is not None:
+            print(", ".join(row[0] for row in rows))
 
         cur.close()
         db.close()
