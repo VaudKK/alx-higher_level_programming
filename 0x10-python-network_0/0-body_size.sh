@@ -1,3 +1,3 @@
 #!/bin/bash
 # Get body size
-curl -sI "$1" | grep "Content-Length:" | cut -d' ' -f 2
+curl -sIL "$1" | grep "Content-Length:" | cut -d' ' -f 2
