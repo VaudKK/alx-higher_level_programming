@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Get peak value with lowerst complexity
 """
